@@ -320,7 +320,7 @@ def any_gate_entry_over_limit(values: list):
     Example:
         any_gate_entry_over_limit([10, 81]) -> True
     """
-    return all(value > 76 for value in values)
+    return any(value > 76 for value in values)
 
 
 def merge_gate_entry_counts(first: dict, second: dict):
