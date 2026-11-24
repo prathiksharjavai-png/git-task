@@ -362,7 +362,7 @@ def format_mess_rebate_code(raw: str):
         format_mess_rebate_code(' ab12 ') -> 'MSR-AB12'
     """
     cleaned = raw.strip()
-    cleaned.upper()
+    cleaned = cleaned.upper()
     return "MSR-" + cleaned
 
 
